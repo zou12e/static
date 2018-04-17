@@ -1,0 +1,21 @@
+@mixin nowrap{
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin borderBox{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+@mixin after{
+    content: "";
+    position: absolute;
+}
+
+@mixin translate($x: -50%,$y: -50%){
+    transform:translate($x, $y);
+    -webkit-transform:translate($x, $y);
+}
