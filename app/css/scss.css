@@ -99,14 +99,61 @@ em, i {
 .clear {
   clear: both; }
 
+.icon {
+  display: inline-block;
+  background-size: 100% 100%; }
+
 .wkt-header {
   height: 1.06667rem;
-  background: url(../images/wkt-bg-4.png); }
-  .wkt-header img {
-    width: 0.8rem;
-    height: 0.8rem; }
-
-div {
-  width: 2.66667rem;
-  height: 2.66667rem;
-  background: red; }
+  background-image: url(../images/wkt-bg-4.png);
+  background-size: 100% auto;
+  overflow: hidden; }
+  .wkt-header .wkt-header-search {
+    height: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0.13333rem 2.32rem 0.13333rem 0.34667rem;
+    border-radius: 0.4rem;
+    padding: 0 0.8rem;
+    position: relative;
+    overflow: hidden; }
+    .wkt-header .wkt-header-search .search {
+      border: none;
+      display: block;
+      margin-top: 0.13333rem;
+      width: 100%;
+      height: 0.53333rem;
+      line-height: 0.53333rem;
+      background: transparent;
+      font-size: 0.32rem;
+      color: #333; }
+    .wkt-header .wkt-header-search .icon {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: absolute;
+      top: 0.2rem; }
+    .wkt-header .wkt-header-search .icon-searh {
+      left: 0.26667rem;
+      background-image: url(../images/wkt-head-1.png); }
+    .wkt-header .wkt-header-search .icon-remove {
+      right: 0.26667rem;
+      background-image: url(../images/wkt-head-2.png); }
+  .wkt-header .wkt-login-info {
+    position: absolute;
+    width: 2.32rem;
+    top: 0.13333rem;
+    right: 0;
+    height: 0.8rem;
+    overflow: hidden; }
+    .wkt-header .wkt-login-info .icon-user {
+      width: 0.4rem;
+      height: 0.4rem;
+      top: 0.2rem;
+      position: absolute;
+      left: 0.13333rem;
+      background-image: url(../images/wkt-head-3.png); }
+    .wkt-header .wkt-login-info .text {
+      display: block;
+      line-height: 0.8rem;
+      font-size: 0.32rem;
+      color: #fff;
+      margin-left: 0.66667rem; }

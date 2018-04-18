@@ -7,7 +7,7 @@ module.exports = {
             ]
         }),
         require('postcss-plugin-px2rem')({
-            rootValue: 37.5
+            rootValue: 75
         })
     ]
 };
