@@ -99,6 +99,13 @@ em, i {
 .clear {
   clear: both; }
 
+.wkt-header {
+  height: 1.06667rem;
+  background: url(../images/wkt-bg-4.png); }
+  .wkt-header img {
+    width: 0.8rem;
+    height: 0.8rem; }
+
 div {
   width: 2.66667rem;
   height: 2.66667rem;
