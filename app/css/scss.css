@@ -103,6 +103,16 @@ em, i {
   display: inline-block;
   background-size: 100% 100%; }
 
+.wkt-button {
+  width: 4rem;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  border-radius: 1.06667rem;
+  background: red;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.48rem; }
+
 .wkt-header {
   height: 1.06667rem;
   background-image: url(../images/wkt-bg-4.png);
@@ -157,3 +167,67 @@ em, i {
       font-size: 0.32rem;
       color: #fff;
       margin-left: 0.66667rem; }
+
+.wkt-header-login {
+  height: 7.4rem;
+  background-image: url(../images/wkt-bg-2.png);
+  background-size: 100% auto;
+  text-align: center;
+  overflow: hidden; }
+  .wkt-header-login .logo {
+    display: block;
+    width: 3.25333rem;
+    height: 3.25333rem;
+    margin: 0.66667rem auto 0rem; }
+  .wkt-header-login .text {
+    width: 2.84rem;
+    height: 0.52rem; }
+
+.wkt-login-content {
+  margin: 0 1.6rem 0;
+  text-align: center; }
+  .wkt-login-content input {
+    border: none;
+    font-size: 0.37333rem;
+    width: 100%;
+    height: 0.66667rem;
+    margin-top: 0.06667rem; }
+  .wkt-login-content .wkt-line {
+    border-bottom: 0.01333rem solid #ccc;
+    text-align: left;
+    margin-top: 1.06667rem;
+    height: 0.93333rem;
+    position: relative; }
+    .wkt-login-content .wkt-line .send-code {
+      position: absolute;
+      right: 0;
+      top: 0.06667rem;
+      line-height: 0.66667rem;
+      padding: 0 0.13333rem 0 0.26667rem;
+      border-left: 0.01333rem solid #ddd; }
+    .wkt-login-content .wkt-line .icon {
+      position: absolute;
+      left: -0.53333rem;
+      top: 0.26667rem;
+      width: 0.32rem;
+      height: 0.37333rem; }
+    .wkt-login-content .wkt-line .icon-phone {
+      background-image: url(../images/wkt-login-1.png); }
+    .wkt-login-content .wkt-line .icon-code {
+      background-image: url(../images/wkt-login-2.png); }
+  .wkt-login-content .send-code {
+    font-size: 0.37333rem; }
+  .wkt-login-content .wkt-msg {
+    text-align: left;
+    font-size: 0.29333rem;
+    height: 0.8rem;
+    line-height: 0.8rem; }
+  .wkt-login-content .wkt-erro {
+    font-size: 0.37333rem;
+    height: 1.06667rem;
+    line-height: 1.06667rem; }
+    .wkt-login-content .wkt-erro .icon-err {
+      width: 0.37333rem;
+      height: 0.37333rem;
+      background-image: url(../images/wkt-icon-1.png);
+      margin: 0 0.06667rem  -0.04rem 0; }

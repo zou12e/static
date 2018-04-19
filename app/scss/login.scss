@@ -1,0 +1,81 @@
+.wkt-header-login {
+    height: 555px;
+    background-image: url(../images/wkt-bg-2.png);
+    background-size: 100% auto;
+    text-align: center;
+    overflow: hidden;
+    .logo {
+        display: block;
+        width: 244px;
+        height: 244px;
+        margin: 50px auto 0px;
+    }
+    .text {
+        width: 213px;
+        height: 39px;
+    }
+}
+
+.wkt-login-content {
+    margin: 0 120px 0;
+    text-align: center;
+    input {
+        border: none;
+        font-size: 28px;
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .wkt-line {
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+        margin-top: 80px;
+        height: 70px;
+        position: relative;
+
+        .send-code {
+            position: absolute;
+            right: 0;
+            top: 5px;
+            line-height: 50px;
+            padding: 0 10px 0 20px;
+            border-left:1px solid #ddd;
+        }
+        .icon {
+            position: absolute;
+            left: -40px;
+            top: 20px;
+            width: 24px;
+            height: 28px;
+        }
+        .icon-phone {
+            background-image: url(../images/wkt-login-1.png)
+        }
+        .icon-code {
+            background-image: url(../images/wkt-login-2.png)
+        }
+    }
+    .send-code {
+        font-size: 28px;
+        
+    }
+    .wkt-msg {
+        text-align: left;
+        font-size: 22px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .wkt-erro {
+        font-size: 28px;
+        height: 80px;
+        line-height: 80px;
+
+        .icon-err {
+            width: 28px;
+            height: 28px;
+            background-image: url(../images/wkt-icon-1.png);
+            margin:0 5px  -3px 0;
+        }
+    }
+}

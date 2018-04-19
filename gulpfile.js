@@ -15,7 +15,7 @@ gulp.task('default', function() {
         livereload.changed(event.path);
     });
 
-    gulp.watch(['app/scss/*.scss'], function(event) {
+    gulp.watch(['app/scss/**/*.scss'], function(event) {
         gulp.start('scss');
     });
 });

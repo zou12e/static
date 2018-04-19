@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册/登录</title>
+    <script src="../css/flexible.js"></script>
+    <link rel="stylesheet" href="../css/scss.css">
+</head>
+<body>
+    <header class='wkt-header-login' >
+        <img class='logo' src="../images/wkt-logo.png" alt="">
+        <img class='text' src="../images/wkt-logo-text.png" alt="">
+    </header>
+    <section class='wkt-login-content' >
+        <div class='wkt-line' >
+            <i class="icon icon-phone"></i>
+            <input  type="tel" maxlength="11" placeholder="请输入电话号码" >
+            <a  class="send-code" href="javascript:void()">发送验证码</a>
+        </div>
+        <div class='wkt-line' >
+            <i class="icon icon-code"></i>
+            <input type="tel" placeholder="请输入验证码" >
+        </div>
+        <div class="wkt-msg">
+            *未收到验证码，请致电客服：0755-xxxxxxx
+        </div>
+        <div class="wkt-erro">
+            <i class="icon icon-err"></i>
+            您输入的电话或验证码错误！
+        </div>
+        <button class='wkt-button' >
+            确定
+        </button>
+    </section>
+</body>
+</html>
