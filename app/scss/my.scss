@@ -1,0 +1,38 @@
+.wkt-my-set-content {
+    margin: 10px 30px;
+    input {
+        @include wkt-input;
+    }
+    li:first-child {
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px -15px 50px;
+        }
+        font-size: 24px;
+        line-height: 50px;
+    }
+    li {
+       
+        margin-top: 30px;
+        
+        .tips {
+
+            font-size: 22px;
+            color: #888;
+            padding-left: 40px;
+            height: 50px;
+        }
+    }
+
+   
+}
+.wkt-my-bottom-box {
+   margin-bottom: 50px;
+    text-align: center;
+
+    .msg {
+        font-size: 22px;
+        color: #888;
+    }
+}

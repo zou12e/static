@@ -5,7 +5,7 @@
     .logo {
         width: 132px;
         height: 132px;
-        margin: 20px auto;
+        margin: 25px auto 5px;
     }
 
     .wkt-contack-header-msg {
@@ -21,7 +21,6 @@
         li:last-child {
             margin-bottom: 0;
         }
-
         .icon {
             width: 26px;
             height: 26px;
@@ -37,4 +36,45 @@
             background-image: url(../images/wkt-contack-13.png);
         }
     }
+}
+
+.wkt-contact-msg-content {
+    position: relative;
+    margin: 0 80px 0 110px;
+    li {
+        position: relative;
+        margin-top: 30px;
+        text-align: center;
+
+        input, textarea {
+            @include wkt-input;
+        }
+        textarea {
+            height: 250px;
+            line-height: 40px;
+            padding-top: 35px;
+        }
+    }
+    li:first-child, li:nth-child(2) {
+        height: 100px;
+    }
+    .icon {
+        position: absolute;
+        width: 24px;
+        height: 30px;
+        left: -40px;
+        top: 35px;
+    }
+    .icon-name {
+        background-image: url(../images/wkt-contack-8.png)
+    }
+    .icon-tel {
+        background-image: url(../images/wkt-contack-9.png)
+    }
+    .icon-msg {
+        background-image: url(../images/wkt-contack-10.png)
+    }
+    
+
+    
 }

@@ -65,6 +65,22 @@
             margin-left: 50px;
         }
     }
+
+    .wkt-back-info {
+        .icon-back {
+            width: 22px;
+            height: 36px;
+            background-image: url(../images/wkt-common-8.png);
+            margin: 0 0 -6px 0;
+        }
+         .back-a {
+            float: left;
+            font-size: 28px;
+            line-height: 80px;
+            color: #fff;
+            padding: 0 20px 0 ;
+        }
+    }
 }
 
 .wkt-header-top {
@@ -74,4 +90,14 @@
     text-align: center;
     overflow: hidden;
     
+}
+
+.wkt-full-body {
+    display: flex; 
+    flex-flow: column; 
+    min-height: 100vh; 
+    overflow:auto;
+    .wkt-my-set-content {
+        flex: 1;
+    }
 }

@@ -54,11 +54,9 @@ gulp.task('replace', function() {
 });
 
 
-gulp.task('clean', function(cb) {
-    pump([
-        gulp.src('app/css/scss-*.css'),
-        clean()
-    ], cb)
+gulp.task('clean', function() {
+    return gulp.src('app/css/scss-*.css')
+        .pipe(clean());
 })
 
  
