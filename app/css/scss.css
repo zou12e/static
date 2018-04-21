@@ -424,16 +424,18 @@ em, i {
         text-align: center; }
       .wkt-message-content-footer .wkt-message-content .message-list .content {
         text-align: left;
-        color: #557755; }
+        color: #557755;
+        position: relative; }
         .wkt-message-content-footer .wkt-message-content .message-list .content img {
           width: 0.66667rem;
           height: 0.66667rem;
           position: absolute;
-          top: 0.8rem;
+          top: 0rem;
           left: 0; }
         .wkt-message-content-footer .wkt-message-content .message-list .content > div {
           margin-left: 0.93333rem;
-          position: relative; }
+          position: relative;
+          font-size: 0.32rem; }
           .wkt-message-content-footer .wkt-message-content .message-list .content > div:after {
             content: "";
             position: absolute;
@@ -443,6 +445,8 @@ em, i {
             border-bottom: 0.29333rem solid #f8f8f8;
             left: 0.4rem;
             top: 0.13333rem; }
+        .wkt-message-content-footer .wkt-message-content .message-list .content .name {
+          font-size: 0.29333rem; }
         .wkt-message-content-footer .wkt-message-content .message-list .content .text {
           font-size: 0.32rem;
           background-color: #f8f8f8;
@@ -451,8 +455,6 @@ em, i {
           border-radius: 0.26667rem;
           margin-top: 0.26667rem;
           display: inline-block; }
-      .wkt-message-content-footer .wkt-message-content .message-list .name {
-        font-size: 0.29333rem; }
       .wkt-message-content-footer .wkt-message-content .message-list .my .content {
         text-align: right; }
         .wkt-message-content-footer .wkt-message-content .message-list .my .content img {
