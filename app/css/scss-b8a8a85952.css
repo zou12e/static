@@ -118,34 +118,23 @@ em, i {
     background-image: url(../images/wkt-button-on.png); }
 
 .wkt-header {
-  height: 1.06667rem;
-  background-image: url(../images/wkt-bg-4.png);
-  background-color: #fff;
-  background-size: 100% auto;
-  overflow: hidden;
   position: fixed;
   left: 0;
-  top: 0;
   right: 0;
-  z-index: 9; }
+  background-image: url(../images/wkt-bg-4.png);
+  background-size: 100% auto;
+  background-color: #fff;
+  z-index: 9;
+  height: 1.06667rem;
+  top: 0; }
   .wkt-header .wkt-header-search {
-    height: 0.8rem;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 0.13333rem 2.32rem 0.13333rem 0.34667rem;
+    height: 0.8rem;
     border-radius: 0.4rem;
-    padding: 0 0.8rem;
     position: relative;
-    overflow: hidden; }
-    .wkt-header .wkt-header-search .search {
-      border: none;
-      display: block;
-      margin-top: 0.13333rem;
-      width: 100%;
-      height: 0.53333rem;
-      line-height: 0.53333rem;
-      background: transparent;
-      font-size: 0.32rem;
-      color: #333; }
+    overflow: hidden;
+    margin: 0.13333rem 2.32rem 0.13333rem 0.34667rem;
+    padding: 0 0.8rem; }
     .wkt-header .wkt-header-search .icon {
       width: 0.4rem;
       height: 0.4rem;
@@ -157,6 +146,16 @@ em, i {
     .wkt-header .wkt-header-search .icon-remove {
       right: 0.26667rem;
       background-image: url(../images/wkt-head-2.png); }
+    .wkt-header .wkt-header-search .search {
+      border: none;
+      display: block;
+      margin-top: 0.13333rem;
+      width: 100%;
+      height: 0.53333rem;
+      line-height: 0.53333rem;
+      background: transparent;
+      font-size: 0.32rem;
+      color: #333; }
   .wkt-header .wkt-login-info, .wkt-header .wkt-loginup-info {
     position: absolute;
     width: 2.32rem;
@@ -240,7 +239,7 @@ em, i {
   margin: 1.06667rem 0 0; }
 
 .wkt-content-footer {
-  margin: 1.06667rem 0 1.86667rem; }
+  margin: 1.06667rem 0 1.6rem; }
 
 .wkt-footer {
   position: fixed;
@@ -248,29 +247,22 @@ em, i {
   right: 0;
   bottom: 0;
   z-index: 9;
-  height: 1.86667rem;
-  background: #fff; }
-  .wkt-footer:after {
-    content: "";
-    position: absolute;
-    top: 0.13333rem;
-    left: 0;
-    right: 0;
-    height: 0.01333rem;
-    z-index: -1;
-    box-shadow: 0rem 0.16rem 0rem 0.01333rem #eee; }
+  height: 1.6rem;
+  background: #fff;
+  border-top: 0.01333rem solid #f1f1f1; }
   .wkt-footer ul {
     margin: 0 0.53333rem; }
   .wkt-footer li {
     float: left;
     width: 25%;
     font-size: 0.29333rem;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .wkt-footer li a {
       color: #575757; }
     .wkt-footer li .text {
       display: block;
-      margin: 0.06667rem auto 0; }
+      margin: 1rem auto 0; }
     .wkt-footer li .icon-nav-1 {
       background-image: url(../images/wkt-nav-1.png); }
     .wkt-footer li .icon-nav-2 {
@@ -294,17 +286,22 @@ em, i {
     .wkt-footer li.new:after {
       content: "";
       position: absolute;
-      top: 0.13333rem;
+      top: 0.02667rem;
       left: 50%;
       margin-left: 0.24rem;
       width: 0.18667rem;
       height: 0.18667rem;
       border-radius: 50%;
       background-color: red;
-      z-index: 1; }
+      z-index: 11; }
   .wkt-footer .icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -0.49333rem;
+    top: -0.13333rem;
     width: 0.98667rem;
     height: 0.98667rem;
+    z-index: 10;
     background-image: url(../images/wkt-nav-1.png); }
 
 .wkt-login-header .logo {
@@ -324,7 +321,7 @@ em, i {
     float: left;
     margin-top: 0.13333rem; }
   .wkt-login-content .wkt-line {
-    border-bottom: 0.01333rem solid #ccc;
+    border-bottom: 0.01333rem solid #ddd;
     text-align: left;
     margin-top: 1.06667rem;
     height: 0.93333rem;
@@ -335,7 +332,7 @@ em, i {
       top: 0.13333rem;
       line-height: 0.66667rem;
       padding: 0 0.2rem 0 0.4rem;
-      border-left: 0.01333rem solid #ddd;
+      border-left: 0.01333rem solid #eee;
       color: #7463c8; }
     .wkt-login-content .wkt-line .icon {
       position: absolute;
@@ -403,6 +400,126 @@ em, i {
       margin-top: 0.13333rem; }
     .wkt-message-content .list .tip.new {
       color: red; }
+
+.wkt-message-content-footer {
+  margin-bottom: 3.06667rem; }
+  .wkt-message-content-footer .wkt-message-content {
+    background-color: #fff; }
+    .wkt-message-content-footer .wkt-message-content .message-list {
+      margin: 0.4rem 0.4rem;
+      text-align: center; }
+      .wkt-message-content-footer .wkt-message-content .message-list li {
+        position: relative;
+        margin-top: 0.53333rem; }
+      .wkt-message-content-footer .wkt-message-content .message-list .time {
+        display: inline-block;
+        height: 0.66667rem;
+        padding: 0 0.4rem;
+        border-radius: 0.66667rem;
+        line-height: 0.66667rem;
+        margin: 0 auto;
+        font-size: 0.29333rem;
+        color: #7463c8;
+        background-color: #e5f3fb;
+        text-align: center; }
+      .wkt-message-content-footer .wkt-message-content .message-list .content {
+        text-align: left;
+        color: #557755; }
+        .wkt-message-content-footer .wkt-message-content .message-list .content img {
+          width: 0.66667rem;
+          height: 0.66667rem;
+          position: absolute;
+          top: 0.8rem;
+          left: 0; }
+        .wkt-message-content-footer .wkt-message-content .message-list .content > div {
+          margin-left: 0.93333rem;
+          position: relative; }
+          .wkt-message-content-footer .wkt-message-content .message-list .content > div:after {
+            content: "";
+            position: absolute;
+            border-top: 0.29333rem solid transparent;
+            border-left: 0.24rem solid transparent;
+            border-right: 0.24rem solid transparent;
+            border-bottom: 0.29333rem solid #f8f8f8;
+            left: 0.4rem;
+            top: 0.13333rem; }
+        .wkt-message-content-footer .wkt-message-content .message-list .content .text {
+          font-size: 0.32rem;
+          background-color: #f8f8f8;
+          line-height: 0.53333rem;
+          padding: 0.26667rem 0.4rem;
+          border-radius: 0.26667rem;
+          margin-top: 0.26667rem;
+          display: inline-block; }
+      .wkt-message-content-footer .wkt-message-content .message-list .name {
+        font-size: 0.29333rem; }
+      .wkt-message-content-footer .wkt-message-content .message-list .my .content {
+        text-align: right; }
+        .wkt-message-content-footer .wkt-message-content .message-list .my .content img {
+          width: 0.66667rem;
+          height: 0.66667rem;
+          position: absolute;
+          left: auto;
+          right: 0; }
+        .wkt-message-content-footer .wkt-message-content .message-list .my .content > div {
+          margin-left: auto;
+          margin-right: 0.93333rem; }
+          .wkt-message-content-footer .wkt-message-content .message-list .my .content > div:after {
+            left: auto;
+            right: 0.4rem;
+            border-bottom-color: #e5f3fb; }
+        .wkt-message-content-footer .wkt-message-content .message-list .my .content .text {
+          background-color: #e5f3fb; }
+
+.wkt-message-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-image: url(../images/wkt-bg-4.png);
+  background-size: 100% auto;
+  background-color: #fff;
+  z-index: 9;
+  bottom: 1.6rem;
+  height: 1.33333rem; }
+  .wkt-message-footer .wkt-message-search {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 0.8rem;
+    border-radius: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0.26667rem 1.6rem 0.26667rem 0.34667rem;
+    padding: 0 0.8rem 0 0.4rem; }
+    .wkt-message-footer .wkt-message-search .icon {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: absolute;
+      top: 0.2rem; }
+    .wkt-message-footer .wkt-message-search .icon-searh {
+      left: 0.26667rem;
+      background-image: url(../images/wkt-head-1.png); }
+    .wkt-message-footer .wkt-message-search .icon-remove {
+      right: 0.26667rem;
+      background-image: url(../images/wkt-head-2.png); }
+    .wkt-message-footer .wkt-message-search .search {
+      border: none;
+      display: block;
+      margin-top: 0.13333rem;
+      width: 100%;
+      height: 0.53333rem;
+      line-height: 0.53333rem;
+      background: transparent;
+      font-size: 0.32rem;
+      color: #333; }
+  .wkt-message-footer .wkt-message-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.4rem;
+    width: 1.6rem;
+    text-align: center;
+    line-height: 1.33333rem; }
+    .wkt-message-footer .wkt-message-right button {
+      color: #fff; }
 
 .wkt-contact-header {
   height: 6.66667rem; }
