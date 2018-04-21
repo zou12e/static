@@ -1,0 +1,49 @@
+.wkt-message-content {
+    background-color: #f4f4f4;
+    .list {
+        overflow: hidden;
+
+        li {
+            font-size: 24px;
+            color: #555;
+            background-color: #fff;
+            margin-bottom: 25px;
+            padding: 0 20px 10px;
+            line-height: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        button.delete {
+            display: none;
+        }
+        li.delete {
+            margin-left: -140px;
+            padding-right: 150px;
+            button.delete {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 140px;
+                height: 100%;
+                background-color: #eb635a;
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+
+        .text {
+            letter-spacing: 2px;
+        }
+        .tip {
+            text-align: right;
+            line-height: 40px;
+            margin-top: 10px;
+        }
+        .tip.new {
+            color:red;
+        }
+
+
+    }
+}

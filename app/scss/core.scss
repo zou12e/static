@@ -1,9 +1,14 @@
 .wkt-header {
     height: 80px;
     background-image: url(../images/wkt-bg-4.png);
+    background-color: #fff;
     background-size: 100% auto;
     overflow: hidden;
-
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9;
     .wkt-header-search {
 
         height: 60px;
@@ -40,7 +45,7 @@
         }
     }
 
-    .wkt-login-info {
+    .wkt-login-info,.wkt-loginup-info {
         position: absolute;
         width: 174px;
         top: 10px;
@@ -66,12 +71,37 @@
         }
     }
 
+    .wkt-loginup-info {
+        img {
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            float: left;
+        }
+        .up-text {
+            font-size: 22px;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            width: 75px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+    }
+
     .wkt-back-info {
         .icon-back {
             width: 22px;
             height: 36px;
             background-image: url(../images/wkt-common-8.png);
             margin: 0 0 -6px 0;
+            
         }
          .back-a {
             float: left;
@@ -99,7 +129,98 @@
     flex-flow: column; 
     min-height: 100vh; 
     overflow:auto;
-    .wkt-my-set-content {
+    .wkt-content,.wkt-content-footer {
         flex: 1;
+    }
+}
+.wkt-content {
+    margin: 80px 0 0;
+}
+.wkt-content-footer {
+    margin: 80px 0 140px;
+}
+
+.wkt-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    height: 140px;
+    background: #fff;
+    &:after {
+        @include after;
+        top: 10px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        z-index: -1;
+        box-shadow: 0px 12px 0px 1px #eee;
+    }
+
+    ul {
+        margin: 0 40px;
+    }
+
+    li {
+        float: left;
+        width: 25%;
+        font-size: 22px;
+        text-align: center;
+        a {
+            color: #575757;
+        }
+        .text{
+            display: block;
+            margin: 5px auto 0;
+        }
+        .icon-nav-1 {
+            background-image: url(../images/wkt-nav-1.png)
+        }
+        .icon-nav-2 {
+            background-image: url(../images/wkt-nav-2.png)
+        }
+        .icon-nav-3 {
+            background-image: url(../images/wkt-nav-3.png)
+        }
+        .icon-nav-4 {
+            background-image: url(../images/wkt-nav-4.png)
+        }
+    }
+    li.on {
+        a {
+            color: $color;
+        }
+        .icon-nav-1 {
+            background-image: url(../images/wkt-nav-1-on.png)
+        }
+        .icon-nav-2 {
+            background-image: url(../images/wkt-nav-2-on.png)
+        }
+        .icon-nav-3 {
+            background-image: url(../images/wkt-nav-3-on.png)
+        }
+        .icon-nav-4 {
+            background-image: url(../images/wkt-nav-4-on.png)
+        }
+    }
+    li.new {
+        position: relative;
+        &:after {
+            @include after;
+            top: 10px;
+            left: 50%;
+            margin-left: 18px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: red;
+            z-index: 1;
+        }
+    }
+    .icon {
+        width: 74px;
+        height: 74px;
+        background-image: url(../images/wkt-nav-1.png)
     }
 }
