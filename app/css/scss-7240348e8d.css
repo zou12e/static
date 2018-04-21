@@ -103,6 +103,50 @@ em, i {
   display: inline-block;
   background-size: 100% 100%; }
 
+.wkt-course-list {
+  margin: 0 0.4rem; }
+  .wkt-course-list li {
+    padding: 0.4rem 0;
+    border-bottom: 0.01333rem solid #ddd; }
+  .wkt-course-list .course-img {
+    width: 2rem;
+    height: 2rem;
+    float: left; }
+  .wkt-course-list .course-content {
+    margin-left: 2.26667rem;
+    min-height: 2rem;
+    color: #575757; }
+    .wkt-course-list .course-content .title {
+      max-height: 1.06667rem;
+      min-height: 0.8rem;
+      line-height: 0.53333rem;
+      font-size: 0.32rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden; }
+    .wkt-course-list .course-content .content {
+      margin-top: 0.2rem;
+      position: relative; }
+      .wkt-course-list .course-content .content .left {
+        font-size: 0.32rem; }
+      .wkt-course-list .course-content .content .head-img {
+        width: 0.66667rem;
+        height: 0.66667rem;
+        margin: 0 0.13333rem -0.16rem 0.06667rem; }
+      .wkt-course-list .course-content .content .right {
+        position: absolute;
+        font-size: 0.32rem;
+        right: 0.06667rem;
+        top: -0.06667rem; }
+      .wkt-course-list .course-content .content .icon {
+        width: 0.8rem;
+        height: 0.8rem; }
+      .wkt-course-list .course-content .content .icon-play {
+        background-image: url(../images/wkt-common-5.png); }
+      .wkt-course-list .course-content .content .icon-dowm {
+        background-image: url(../images/wkt-common-6.png); }
+
 .wkt-button {
   width: 5.70667rem;
   height: 2.41333rem;
@@ -361,6 +405,19 @@ em, i {
     background: #eeeeee;
     margin: 0 0.26667rem 0.4rem 0;
     border-radius: 0.4rem; }
+
+.wkt-search-content .no-search {
+  margin: 0 0.4rem;
+  text-align: center;
+  line-height: 2.13333rem;
+  font-size: 0.32rem;
+  color: #575757;
+  border-bottom: 0.01333rem solid #ddd; }
+  .wkt-search-content .no-search .icon-no-data {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url(../images/wkt-icon-4.png);
+    margin: 0 0.13333rem -0.26667rem 0; }
 
 .wkt-search-bottom-box {
   margin-bottom: 0.66667rem;

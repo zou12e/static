@@ -77,6 +77,63 @@ $color: #7463c8;
     z-index: 9;
 }
 
+// 课程列表
+.wkt-course-list {
+    margin: 0 30px;
+    li {
+        padding: 30px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .course-img {
+        width: 150px;
+        height: 150px;
+        float: left;
+    }
+    .course-content {
+        margin-left: 170px;
+        min-height: 150px;
+        color: #575757;
+        .title {
+            max-height: 80px;
+            min-height: 60px;
+            line-height: 40px;
+            font-size: 24px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        .content {
+            margin-top: 15px;
+            position: relative;
+            .left {
+                font-size: 24px;
+            }
+            .head-img {
+                width: 50px;
+                height: 50px;
+                margin: 0 10px -12px 5px;
+            }
+            .right {
+                position: absolute;
+                font-size: 24px;
+                right: 5px;
+                top: -5px;
+            }
+            .icon {
+                width: 60px;
+                height: 60px;
+            }
+            .icon-play {
+                background-image: url(../images/wkt-common-5.png)
+            }
+            .icon-dowm {
+                background-image: url(../images/wkt-common-6.png)
+            }
+        }
+    }
+}
+
 // 提交按钮
 .wkt-button {
     width: 428px;
