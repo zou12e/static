@@ -148,15 +148,7 @@
         padding: 0 60px 0 30px;
     }
     .wkt-message-right {
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 30px;
-        width: 120px;
-        text-align: center;
         line-height: 100px;
-        button {
-            color: #fff;
-        }
+        @include wkt-search-right;
     }
 }

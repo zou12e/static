@@ -1,6 +1,6 @@
 
 $color: #7463c8;
-
+// 输入框
 @mixin wkt-input {
     @include borderBox;
     width: 100%;
@@ -14,6 +14,7 @@ $color: #7463c8;
     padding-left: 40px;
 }
 
+// 搜索框
 @mixin wkt-search-input {
     border: none;
     display: block;
@@ -26,6 +27,7 @@ $color: #7463c8;
     color: #333;
 }
 
+// 搜索框盒子
 @mixin wkt-search-box {
     background-color: rgba(255,255,255, .5);
     height: 60px;
@@ -51,6 +53,20 @@ $color: #7463c8;
     }
 }
 
+// 搜索框右边
+@mixin wkt-search-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    width: 120px;
+    text-align: center;
+    button {
+        color: #fff;
+    }
+}
+
+// 短背景
 @mixin wkt-short-bg {
     position: fixed;
     left: 0;
@@ -61,6 +77,7 @@ $color: #7463c8;
     z-index: 9;
 }
 
+// 提交按钮
 .wkt-button {
     width: 428px;
     height: 181px;

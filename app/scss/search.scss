@@ -1,0 +1,43 @@
+
+.wkt-search-box {
+    @include wkt-search-box;
+    margin: 10px 120px 10px 26px;
+    padding: 0 60px;
+}
+.wkt-search-right {
+    line-height: 80px;
+    @include wkt-search-right;
+}
+.wkt-search-content {
+
+    .history-list {
+        margin: 0 30px 10px;
+        max-height: 250px;
+        overflow: hidden;
+        dt {
+            font-size: 26px;
+            line-height: 100px;
+            color: #000;
+        }
+        dd {
+
+            float: left;
+            font-size: 22px;
+            padding: 10px 30px;
+            color: #575757;
+            background: #eeeeee;
+            margin: 0 20px 30px 0;
+            border-radius: 30px;
+        }
+    }
+
+}
+.wkt-search-bottom-box {
+    margin-bottom: 50px;
+    text-align: center;
+    .icon-clean {
+        width: 80px;
+        height: 80px;
+        background-image: url(../images/wkt-common-9.png)
+    }
+}
