@@ -1,30 +1,24 @@
-.wkt-header-login {
-    height: 555px;
-    background-image: url(../images/wkt-bg-2.png);
-    background-size: 100% auto;
-    text-align: center;
-    overflow: hidden;
+.wkt-login-header {
+
     .logo {
         display: block;
         width: 244px;
-        height: 244px;
-        margin: 50px auto 0px;
+        height: 273px;
+        margin: 50px auto 0;
     }
-    .text {
-        width: 213px;
-        height: 39px;
-    }
+    
 }
 
 .wkt-login-content {
-    margin: 0 120px 0;
+    margin: 0 107px 0 155px;
     text-align: center;
     input {
         border: none;
-        font-size: 28px;
-        width: 100%;
+        font-size: 30px;
         height: 50px;
-        margin-top: 5px;
+        padding-left: 10px;
+        float: left;
+        margin-top: 10px;
     }
 
     .wkt-line {
@@ -37,10 +31,11 @@
         .send-code {
             position: absolute;
             right: 0;
-            top: 5px;
+            top: 10px;
             line-height: 50px;
-            padding: 0 10px 0 20px;
+            padding: 0 15px 0 30px;
             border-left:1px solid #ddd;
+            color: $color;
         }
         .icon {
             position: absolute;
@@ -57,20 +52,22 @@
         }
     }
     .send-code {
-        font-size: 28px;
+        font-size: 30px;
         
     }
     .wkt-msg {
         text-align: left;
-        font-size: 22px;
+        font-size: 24px;
         height: 60px;
         line-height: 60px;
+        color: $color;
+        white-space: nowrap;
     }
     .wkt-erro {
-        font-size: 28px;
-        height: 80px;
-        line-height: 80px;
-
+        font-size: 24px;
+        color: $color;
+        margin-top: 20px;
+        height: 28px;
         .icon-err {
             width: 28px;
             height: 28px;

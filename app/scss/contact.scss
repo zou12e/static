@@ -1,0 +1,40 @@
+.wkt-contact-header {
+    height: 500px;
+    
+    
+    .logo {
+        width: 132px;
+        height: 132px;
+        margin: 20px auto;
+    }
+
+    .wkt-contack-header-msg {
+
+        margin: 0 0 0 128px;
+        font-size: 24px;
+        text-align: left;
+        color: #fff;
+
+        li {
+            margin-bottom: 40px;
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            margin: 0 10px -4px 0px;
+        }
+        .icon-tel {
+            background-image: url(../images/wkt-contack-11.png);
+        }
+        .icon-msg {
+            background-image: url(../images/wkt-contack-12.png);
+        }
+        .icon-addr {
+            background-image: url(../images/wkt-contack-13.png);
+        }
+    }
+}
