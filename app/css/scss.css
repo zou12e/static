@@ -186,7 +186,9 @@ em, i {
 .wkt-header-top {
   height: 7.4rem;
   background-image: url(../images/wkt-bg-2.png);
-  background-size: 100% 100%;
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
   text-align: center;
   overflow: hidden; }
 
@@ -364,3 +366,13 @@ em, i {
   .wkt-my-bottom-box .msg {
     font-size: 0.29333rem;
     color: #888; }
+
+.wkt-my-contact-header {
+  height: 4rem; }
+  .wkt-my-contact-header .logo {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.53333rem 0 -0.53333rem 0; }
+  .wkt-my-contact-header .text {
+    width: 2.84rem;
+    height: 0.52rem; }
