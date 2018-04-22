@@ -17,21 +17,8 @@
             display: none;
         }
         li.delete {
-            margin-left: -140px;
-            padding-right: 150px;
-            button.delete {
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 140px;
-                height: 100%;
-                background-color: #eb635a;
-                font-size: 30px;
-                color: #fff;
-            }
+            @include wkt-delete-box;
         }
-
         .text {
             letter-spacing: 2px;
         }

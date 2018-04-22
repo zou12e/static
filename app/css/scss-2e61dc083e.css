@@ -153,6 +153,22 @@ em, i {
   .wkt-course-list li {
     padding: 0.4rem 0;
     border-bottom: 0.01333rem solid #ddd; }
+  .wkt-course-list button.delete {
+    display: none; }
+  .wkt-course-list li.delete {
+    position: relative;
+    margin-left: -1.86667rem;
+    padding-right: 2rem; }
+    .wkt-course-list li.delete button.delete {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1.86667rem;
+      height: 100%;
+      background-color: #eb635a;
+      font-size: 0.4rem;
+      color: #fff; }
   .wkt-course-list .course-img {
     width: 2rem;
     height: 2rem;
@@ -567,6 +583,7 @@ em, i {
     .wkt-message-content .list button.delete {
       display: none; }
     .wkt-message-content .list li.delete {
+      position: relative;
       margin-left: -1.86667rem;
       padding-right: 2rem; }
       .wkt-message-content .list li.delete button.delete {

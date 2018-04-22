@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的微课</title>
+    <title>课程回收站</title>
     <script src="../css/flexible.js"></script>
     <link rel="stylesheet" href="../css/scss-2e61dc083e.css">
 </head>
@@ -30,15 +30,12 @@
                 <ul class="wkt-common-tab" >
                     <li class='on' >
                         <!-- <i class="icon icon-radio"></i> -->
-                        <span class="text">已上传</span>   
+                        <span class="text">课程草稿</span>   
                     </li>
                     <!-- class='new' -->
                     <li>
                         <!-- <i class="icon icon-video"></i> -->
-                        <span class="text">已完成</span>
-                    </li>
-                    <li>
-                        <span class="text">未完成</span>
+                        <span class="text">已删除</span>
                     </li>
                 </ul>
 
@@ -55,8 +52,7 @@
                                     林老师
                                 </div>
                                 <div class="right">
-                                    <i class="icon icon-little icon-play"></i>
-                                    <span class="button" >上传</span>
+                                    <span class="button" >删除</span>
                                     <span class="button" >编辑</span>
                                 </div>
                             </div>
@@ -74,9 +70,7 @@
                                     林老师
                                 </div>
                                 <div class="right">
-                                    <i class="icon icon-little icon-play"></i>
-                                    <span class="button" >删除</span>
-                                    <span class="button" >撤回</span>
+                                    <span class="button" >编辑</span>
                                 </div>
                             </div>
                         </div>
@@ -93,14 +87,12 @@
                                     林老师
                                 </div>
                                 <div class="right">
-                                    <i class="icon icon-little icon-dowm"></i>
-                                    <span class="button" >删除</span>
-                                    <span class="button" >撤回</span>
+                                    <span class="button" >编辑</span>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class='delete' >
                         <img class="course-img" src="../images/wkt-common-2.png">
                         <div class="course-content" >
                             <div class="title">
@@ -112,10 +104,14 @@
                                     林老师
                                 </div>
                                 <div class="right">
-                                    <i class="icon icon-little icon-dowm"></i>
+                                    <span class="button" >删除</span>
+                                    <span class="button" >还原</span>
                                 </div>
                             </div>
                         </div>
+                        <button class="delete">
+                            删除
+                        </button>
                     </li>
                 </ul>
 
