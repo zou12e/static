@@ -62,7 +62,7 @@ a {
   cursor: pointer; }
 
 a:active {
-  background-color: #e5e6e7; }
+  background-color: rgba(0, 0, 0, 0.1); }
 
 a:focus {
   outline: 0;
@@ -102,6 +102,50 @@ em, i {
 .icon {
   display: inline-block;
   background-size: 100% 100%; }
+
+.wkt-common-tab {
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex; }
+  .wkt-common-tab > li {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    text-align: center;
+    color: #575757;
+    font-size: 0.37333rem;
+    background-color: #f4f4f4;
+    position: relative; }
+  .wkt-common-tab > li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 1.06667rem;
+    top: 0.13333rem;
+    border-right: 0.01333rem solid #ddd; }
+  .wkt-common-tab > li.on {
+    background: #fff; }
+  .wkt-common-tab > li.new .text {
+    position: relative; }
+    .wkt-common-tab > li.new .text:after {
+      content: "";
+      position: absolute;
+      right: -0.18667rem;
+      top: -0.10667rem;
+      width: 0.16rem;
+      height: 0.16rem;
+      border-radius: 50%;
+      background-color: red; }
+  .wkt-common-tab .icon {
+    width: 0.37333rem;
+    height: 0.4rem;
+    margin: 0 0.06667rem -0.06667rem 0; }
+  .wkt-common-tab .icon-radio {
+    background-image: url(../images/wkt-data-1.png); }
+  .wkt-common-tab .icon-video {
+    background-image: url(../images/wkt-data-2.png); }
 
 .wkt-course-list {
   margin: 0 0.4rem; }
@@ -248,12 +292,15 @@ em, i {
     height: 0.48rem;
     background-image: url(../images/wkt-common-8.png);
     margin: 0 0 -0.08rem 0; }
-  .wkt-header .wkt-back-info .back-a {
+  .wkt-header .wkt-back-info .back-a, .wkt-header .wkt-back-info .down-a {
     float: left;
     font-size: 0.37333rem;
     line-height: 1.06667rem;
     color: #fff;
-    padding: 0 0.26667rem 0; }
+    padding: 0 0.26667rem; }
+  .wkt-header .wkt-back-info .down-a {
+    float: right;
+    padding: 0 0.53333rem; }
 
 .wkt-header-top {
   height: 7.4rem;
@@ -740,11 +787,16 @@ em, i {
       height: 0.66667rem; }
 
 .wkt-my-bottom-box {
-  margin-bottom: 0.66667rem;
+  margin: 0.26667rem 0 0.66667rem;
   text-align: center; }
   .wkt-my-bottom-box .msg {
     font-size: 0.29333rem;
     color: #888; }
+  .wkt-my-bottom-box .icon-no-more {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-image: url(../images/wkt-icon-3.png);
+    margin: 0 0 -0.06667rem 0; }
 
 .wkt-my-contact-header {
   height: 4rem; }

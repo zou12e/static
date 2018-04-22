@@ -65,12 +65,16 @@
             margin: 0 0 -6px 0;
             
         }
-         .back-a {
+         .back-a, .down-a {
             float: left;
             font-size: 28px;
             line-height: 80px;
             color: #fff;
-            padding: 0 20px 0 ;
+            padding: 0 20px;
+        }
+        .down-a {
+            float: right;
+            padding: 0 40px;
         }
     }
 }

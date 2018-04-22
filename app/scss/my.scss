@@ -28,12 +28,18 @@
    
 }
 .wkt-my-bottom-box {
-    margin-bottom: 50px;
+    margin:20px 0 50px;
     text-align: center;
 
     .msg {
         font-size: 22px;
         color: #888;
+    }
+    .icon-no-more {
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/wkt-icon-3.png);
+        margin: 0 0 -5px 0;
     }
 }
 

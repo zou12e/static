@@ -77,6 +77,58 @@ $color: #7463c8;
     z-index: 9;
 }
 
+// tab切换
+.wkt-common-tab {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    > li {
+        flex-grow: 1;
+        text-align: center;
+        color: #575757;
+        font-size: 28px;
+        background-color: #f4f4f4;
+        position: relative;
+    }
+    > li:not(:last-child) {
+        &:after {
+            @include after;
+            right: 0;
+            height: 80px;
+            top: 10px;
+            border-right: 1px solid #ddd;
+        }
+    }
+    > li.on {
+        background: #fff;
+    } 
+    > li.new {
+        .text {
+            position: relative;
+            &:after {
+                @include after;
+                right: -14px;
+                top: -8px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: red;
+            }
+        }
+    }
+    .icon {
+        width: 28px;
+        height: 30px;
+        margin: 0 5px -5px 0;
+    }
+    .icon-radio {
+        background-image: url(../images/wkt-data-1.png);
+    }
+    .icon-video {
+        background-image: url(../images/wkt-data-2.png);
+    }
+}
+
 // 课程列表
 .wkt-course-list {
     margin: 0 30px;
@@ -147,7 +199,11 @@ $color: #7463c8;
     letter-spacing: 16px;
     color: #fff;
 
-    &:hover,&:active {
+    &:active {
         background-image: url(../images/wkt-button-on.png);
+    }
+    &:focus{
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
     }
 }
