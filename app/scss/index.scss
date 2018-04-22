@@ -138,3 +138,40 @@
         
     }
 }
+
+.wkt-index-teacher-info {
+    @include wkt-border-top;
+    .teacher-title {
+        border-bottom: 1px solid #ddd;
+        margin: 0 30px;
+        height: 100px;
+        .left{
+            float: left;
+            font-size: 24px;
+            .head-img {
+                width: 50px;
+                height: 50px; 
+                margin: 25px 10px -12px 5px;
+            }
+        }
+
+        .search-button{
+            float: right;
+            margin-top: 30px;
+            @include wkt-little-button;
+            padding: 0 35px;
+        }
+    }
+    .teacher-tag {
+        margin-top: 20px;
+        padding: 0 30px;
+        font-size: 24px;
+        color: $color_txt;
+    }
+
+}
+
+
+.wkt-index-bottom-box {
+    @include wkt-bottom-box;
+}

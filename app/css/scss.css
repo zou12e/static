@@ -626,6 +626,50 @@ input[type=checkbox]:checked:after {
     .wkt-index-books-list .books-content .author {
       margin-top: 0.06667rem; }
 
+.wkt-index-teacher-info {
+  border-top: 0.4rem solid #f4f4f4; }
+  .wkt-index-teacher-info .teacher-title {
+    border-bottom: 0.01333rem solid #ddd;
+    margin: 0 0.4rem;
+    height: 1.33333rem; }
+    .wkt-index-teacher-info .teacher-title .left {
+      float: left;
+      font-size: 0.32rem; }
+      .wkt-index-teacher-info .teacher-title .left .head-img {
+        width: 0.66667rem;
+        height: 0.66667rem;
+        margin: 0.33333rem 0.13333rem -0.16rem 0.06667rem; }
+    .wkt-index-teacher-info .teacher-title .search-button {
+      float: right;
+      margin-top: 0.4rem;
+      display: inline-block;
+      height: 0.61333rem;
+      line-height: 0.61333rem;
+      padding: 0 0.4rem;
+      color: #7463c8;
+      background-color: #e5f3fb;
+      border-radius: 0.66667rem;
+      font-size: 0.29333rem;
+      text-align: center;
+      padding: 0 0.46667rem; }
+  .wkt-index-teacher-info .teacher-tag {
+    margin-top: 0.26667rem;
+    padding: 0 0.4rem;
+    font-size: 0.32rem;
+    color: #575757; }
+
+.wkt-index-bottom-box {
+  margin: 0.26667rem 0 0.66667rem;
+  text-align: center; }
+  .wkt-index-bottom-box .msg {
+    font-size: 0.29333rem;
+    color: #888; }
+  .wkt-index-bottom-box .icon-no-more {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-image: url(../images/wkt-icon-3.png);
+    margin: 0 0 -0.06667rem 0; }
+
 .wkt-search-box {
   background-color: rgba(255, 255, 255, 0.5);
   height: 0.8rem;
@@ -1202,10 +1246,6 @@ input[type=checkbox]:checked:after {
 .wkt-my-bottom-box {
   margin: 0.26667rem 0 0.66667rem;
   text-align: center; }
-  .wkt-my-bottom-box .check-box {
-    font-size: 0.37333rem; }
-    .wkt-my-bottom-box .check-box input[type=checkbox] {
-      margin: 0 0.13333rem -0.13333rem 0; }
   .wkt-my-bottom-box .msg {
     font-size: 0.29333rem;
     color: #888; }
@@ -1214,6 +1254,10 @@ input[type=checkbox]:checked:after {
     height: 0.4rem;
     background-image: url(../images/wkt-icon-3.png);
     margin: 0 0 -0.06667rem 0; }
+  .wkt-my-bottom-box .check-box {
+    font-size: 0.37333rem; }
+    .wkt-my-bottom-box .check-box input[type=checkbox] {
+      margin: 0 0.13333rem -0.13333rem 0; }
 
 .wkt-my-contact-header {
   height: 4rem; }

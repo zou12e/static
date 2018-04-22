@@ -99,7 +99,9 @@ $color_bg: #e5f3fb;
     border-radius: 50%;
     background-color: red;
 }
-
+@mixin wkt-border-top {
+    border-top: 30px solid #f4f4f4;
+}   
 // tab切换
 .wkt-common-tab {
     height: 100px;
@@ -171,6 +173,20 @@ $color_bg: #e5f3fb;
     }
 }
 
+@mixin wkt-bottom-box {
+    margin:20px 0 50px;
+    text-align: center;
+    .msg {
+        font-size: 22px;
+        color: #888;
+    }
+    .icon-no-more {
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/wkt-icon-3.png);
+        margin: 0 0 -5px 0;
+    }
+}
 // 课程列表
 .wkt-course-list {
     margin: 0 30px;

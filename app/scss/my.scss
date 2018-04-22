@@ -65,7 +65,7 @@
 
 .wkt-my-list-content {
 
-    border-top: 30px solid #f4f4f4;
+    @include wkt-border-top;
     
 
     .menu-list {
@@ -199,8 +199,7 @@
    
 }
 .wkt-my-bottom-box {
-    margin:20px 0 50px;
-    text-align: center;
+    @include wkt-bottom-box;
     .check-box {
         font-size: 28px;
 
@@ -208,16 +207,6 @@
             margin: 0 10px -10px 0;
         }
        
-    }
-    .msg {
-        font-size: 22px;
-        color: #888;
-    }
-    .icon-no-more {
-        width: 30px;
-        height: 30px;
-        background-image: url(../images/wkt-icon-3.png);
-        margin: 0 0 -5px 0;
     }
 }
 
