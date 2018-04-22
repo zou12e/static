@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button {
   margin: 0;
   padding: 0; }
@@ -137,12 +138,12 @@ em, i {
     .wkt-common-tab > li.new .text:after {
       content: "";
       position: absolute;
-      right: -0.18667rem;
-      top: -0.10667rem;
-      width: 0.16rem;
-      height: 0.16rem;
+      width: 0.18667rem;
+      height: 0.18667rem;
       border-radius: 50%;
-      background-color: red; }
+      background-color: red;
+      right: -0.18667rem;
+      top: -0.10667rem; }
   .wkt-common-tab .icon {
     width: 0.37333rem;
     height: 0.4rem;
@@ -220,7 +221,7 @@ em, i {
         height: 0.8rem; }
       .wkt-course-list .course-content .content .icon-play {
         background-image: url(../images/wkt-common-5.png); }
-      .wkt-course-list .course-content .content .icon-dowm {
+      .wkt-course-list .course-content .content .icon-down {
         background-image: url(../images/wkt-common-6.png); }
       .wkt-course-list .course-content .content .icon-little {
         width: 0.61333rem;
@@ -377,7 +378,7 @@ input[type=checkbox]:checked:after {
           flex-flow: column;
   min-height: 100vh;
   overflow: auto; }
-  .wkt-full-body .wkt-content, .wkt-full-body .wkt-content-footer, .wkt-full-body .wkt-long-content {
+  .wkt-full-body .wkt-only-content, .wkt-full-body .wkt-only-footer, .wkt-full-body .wkt-content-footer, .wkt-full-body .wkt-long-content {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
             flex: 1; }
@@ -436,13 +437,13 @@ input[type=checkbox]:checked:after {
     .wkt-footer li.new:after {
       content: "";
       position: absolute;
-      top: 0.02667rem;
-      left: 50%;
-      margin-left: 0.24rem;
       width: 0.18667rem;
       height: 0.18667rem;
       border-radius: 50%;
       background-color: red;
+      top: 0.02667rem;
+      left: 50%;
+      margin-left: 0.24rem;
       z-index: 11; }
   .wkt-footer .icon {
     position: absolute;
@@ -512,6 +513,70 @@ input[type=checkbox]:checked:after {
     .wkt-long-content .middle img {
       width: 85%;
       height: 85%; }
+
+.wkt-index-course-content {
+  margin-left: 2.8rem; }
+
+.wkt-index-course-left {
+  position: fixed;
+  left: 0;
+  top: 1.06667rem;
+  bottom: 0;
+  width: 2.66667rem;
+  background-color: #f4f4f4;
+  overflow-y: scroll; }
+  .wkt-index-course-left > li {
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    color: #575757;
+    font-size: 0.32rem;
+    text-align: center;
+    position: relative; }
+    .wkt-index-course-left > li:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      border-bottom: 0.01333rem solid #ddd; }
+    .wkt-index-course-left > li .icon-hot {
+      width: 0.34667rem;
+      height: 0.42667rem;
+      background-image: url("../images/wkt-hot.png");
+      margin: 0 0.05333rem -0.04rem 0; }
+  .wkt-index-course-left > li.on {
+    background-color: #fff; }
+    .wkt-index-course-left > li.on:after {
+      border: none; }
+  .wkt-index-course-left > li.new .text {
+    position: relative; }
+    .wkt-index-course-left > li.new .text:after {
+      content: "";
+      position: absolute;
+      width: 0.18667rem;
+      height: 0.18667rem;
+      border-radius: 50%;
+      background-color: red;
+      top: -0.13333rem;
+      right: -0.13333rem; }
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.wkt-index-course-left::-webkit-scrollbar {
+  width: 0.05333rem;
+  height: 0.05333rem;
+  background-color: #fff; }
+
+/*定义滚动条轨道 内阴影+圆角*/
+.wkt-index-course-left::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.08rem #fff;
+  border-radius: 0.13333rem;
+  background-color: #fff; }
+
+/*定义滑块 内阴影+圆角*/
+.wkt-index-course-left::-webkit-scrollbar-thumb {
+  border-radius: 0.13333rem;
+  box-shadow: inset 0 0 0.08rem #ddd;
+  background-color: #555; }
 
 .wkt-search-box {
   background-color: rgba(255, 255, 255, 0.5);

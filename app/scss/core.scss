@@ -95,7 +95,7 @@
     flex-flow: column; 
     min-height: 100vh; 
     overflow:auto;
-    .wkt-content,.wkt-content-footer,.wkt-long-content {
+    .wkt-only-content,.wkt-only-footer,.wkt-content-footer,.wkt-long-content {
         flex: 1;
     }
 }
@@ -169,14 +169,10 @@
     li.new {
         position: relative;
         &:after {
-            @include after;
+            @include wkt-hot-dot;
             top: 2px;
             left: 50%;
             margin-left: 18px;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background-color: red;
             z-index: 11;
         }
     }
