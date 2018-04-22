@@ -90,13 +90,14 @@ $color: #7463c8;
         background-color: #f4f4f4;
         position: relative;
     }
-    > li:not(:last-child) {
+    > li:not(:first-child) {
         &:after {
             @include after;
-            right: 0;
+            left: 1px;
+            z-index: 8;
             height: 80px;
             top: 10px;
-            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
         }
     }
     > li.on {
@@ -171,6 +172,16 @@ $color: #7463c8;
                 font-size: 24px;
                 right: 5px;
                 top: -5px;
+                .button {
+                    display: inline-block;
+                    background-color: #e5f3fb;
+                    margin:10px 0 0 6px;
+                    padding: 0 30px; 
+                    border-radius: 30px;
+                    line-height: 46px;
+                    height: 46px;
+                    color: $color;
+                }
             }
             .icon {
                 width: 60px;
@@ -181,6 +192,11 @@ $color: #7463c8;
             }
             .icon-dowm {
                 background-image: url(../images/wkt-common-6.png)
+            }
+            .icon-little {
+                width: 46px;
+                height: 46px;
+                margin: 10px 0 -15px 0;
             }
         }
     }

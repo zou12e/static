@@ -118,13 +118,14 @@ em, i {
     font-size: 0.37333rem;
     background-color: #f4f4f4;
     position: relative; }
-  .wkt-common-tab > li:not(:last-child):after {
+  .wkt-common-tab > li:not(:first-child):after {
     content: "";
     position: absolute;
-    right: 0;
+    left: 0.01333rem;
+    z-index: 8;
     height: 1.06667rem;
     top: 0.13333rem;
-    border-right: 0.01333rem solid #ddd; }
+    border-left: 0.01333rem solid #ddd; }
   .wkt-common-tab > li.on {
     background: #fff; }
   .wkt-common-tab > li.new .text {
@@ -183,6 +184,15 @@ em, i {
         font-size: 0.32rem;
         right: 0.06667rem;
         top: -0.06667rem; }
+        .wkt-course-list .course-content .content .right .button {
+          display: inline-block;
+          background-color: #e5f3fb;
+          margin: 0.13333rem 0 0 0.08rem;
+          padding: 0 0.4rem;
+          border-radius: 0.4rem;
+          line-height: 0.61333rem;
+          height: 0.61333rem;
+          color: #7463c8; }
       .wkt-course-list .course-content .content .icon {
         width: 0.8rem;
         height: 0.8rem; }
@@ -190,6 +200,10 @@ em, i {
         background-image: url(../images/wkt-common-5.png); }
       .wkt-course-list .course-content .content .icon-dowm {
         background-image: url(../images/wkt-common-6.png); }
+      .wkt-course-list .course-content .content .icon-little {
+        width: 0.61333rem;
+        height: 0.61333rem;
+        margin: 0.13333rem 0 -0.2rem 0; }
 
 .wkt-button {
   width: 5.70667rem;
@@ -202,8 +216,11 @@ em, i {
   font-size: 0.45333rem;
   letter-spacing: 0.21333rem;
   color: #fff; }
-  .wkt-button:hover, .wkt-button:active {
+  .wkt-button:active {
     background-image: url(../images/wkt-button-on.png); }
+  .wkt-button:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent; }
 
 .wkt-header {
   position: fixed;

@@ -21,7 +21,9 @@ gulp.task('default', function() {
     });
 
     gulp.watch(['app/scss/**/*.scss'], function(event) {
-        gulp.start('scss');
+        setTimeout(()=>{
+            gulp.start('scss');
+        }, 200)
     });
 });
 
