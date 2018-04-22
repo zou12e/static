@@ -49,16 +49,8 @@
                 margin-top: 40px;
             }
             .time {
-                display: inline-block;
-                height: 50px;
-                padding: 0 30px;
-                border-radius: 50px;
-                line-height: 50px;
+                @include wkt-little-button;
                 margin: 0 auto;
-                font-size: 22px;
-                color: $color;
-                background-color: #e5f3fb;
-                text-align: center;
             }
             .content {
                 text-align: left;
@@ -114,11 +106,11 @@
                     &:after {
                         left: auto;
                         right: 30px;
-                        border-bottom-color:  #e5f3fb;
+                        border-bottom-color:  $color_bg;
                     }
                 }
                 .text {
-                    background-color: #e5f3fb;
+                    background-color: $color_bg;
                 }
             }
         }

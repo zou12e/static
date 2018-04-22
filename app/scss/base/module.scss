@@ -1,5 +1,7 @@
 
 $color: #7463c8;
+$color_txt: #575757;
+$color_bg: #e5f3fb;
 // 输入框
 @mixin wkt-input {
     @include borderBox;
@@ -77,6 +79,19 @@ $color: #7463c8;
     z-index: 9;
 }
 
+@mixin wkt-little-button {
+
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 30px;
+    color: $color;
+    background-color: $color_bg;
+    border-radius: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
 // tab切换
 .wkt-common-tab {
     height: 100px;
@@ -85,10 +100,15 @@ $color: #7463c8;
     > li {
         flex-grow: 1;
         text-align: center;
-        color: #575757;
+        color: $color_txt;
         font-size: 28px;
         background-color: #f4f4f4;
         position: relative;
+        > a {
+            display: block;
+            height: 100px;
+            color:  $color_txt;
+        }
     }
     > li:not(:first-child) {
         &:after {
@@ -132,14 +152,14 @@ $color: #7463c8;
 
 @mixin wkt-delete-box {
     position: relative;
-    margin-left: -140px;
-    padding-right: 150px;
+    margin-left: -120px;
+    padding-right: 130px;
     button.delete {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        width: 140px;
+        width: 120px;
         height: 100%;
         background-color: #eb635a;
         font-size: 30px;
@@ -169,7 +189,7 @@ $color: #7463c8;
     .course-content {
         margin-left: 170px;
         min-height: 150px;
-        color: #575757;
+        color: $color_txt;
         .title {
             max-height: 80px;
             min-height: 60px;
@@ -197,14 +217,8 @@ $color: #7463c8;
                 right: 5px;
                 top: -5px;
                 .button {
-                    display: inline-block;
-                    background-color: #e5f3fb;
+                    @include wkt-little-button;
                     margin:10px 0 0 6px;
-                    padding: 0 30px; 
-                    border-radius: 30px;
-                    line-height: 46px;
-                    height: 46px;
-                    color: $color;
                 }
             }
             .icon {
@@ -245,5 +259,25 @@ $color: #7463c8;
     &:focus{
         outline: 0;
         -webkit-tap-highlight-color: transparent;
+    }
+}
+
+input[type=checkbox] {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    &:after {
+        @include after;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/wkt-create-3.png);
+        background-size: 100% 100%;
+        top: 0;
+        left: 0;
+    }
+}
+input[type=checkbox]:checked {
+    &:after {
+        background-image: url(../images/wkt-create-3-on.png);
     }
 }

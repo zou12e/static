@@ -1,7 +1,32 @@
 .wkt-my-set-content {
     margin: 10px 30px;
-    input {
+    input, select {
         @include wkt-input;
+    }
+    .select {
+        display: block;
+        position: relative;
+        select {
+            background: transparent;
+        }
+        &:after {
+            @include after;
+            top: 0;
+            right: 0;
+            border-top: 22px solid #666;
+            border-left: 13px solid transparent ;
+            border-right: 13px solid transparent;
+            border-bottom: 22px solid transparent;
+            right: 40px;
+            top: 50%;
+            margin-top: -11px;
+            z-index: -1;
+        }
+        &:before {
+            @include after;
+            @include wkt-input;
+            z-index: -2;
+        }
     }
     li:first-child {
         img {
@@ -24,13 +49,57 @@
             height: 50px;
         }
     }
+    li.up {
+        position: relative;
+
+        .up-button, .delete-button {
+            @include wkt-little-button;
+            padding: 0 40px;
+            position: absolute;
+            right: 40px;
+            bottom: 26px;
+        }
+
+    }
+    li.option {
+        position: relative;
+        text-align: right;
+        padding-right: 40px;
+        .icon {
+            @include icon(150px,150px)
+        }
+        .absoulte {
+            position: absolute;
+            top: 0;
+            right: 40px;
+        }
+        .icon-radio {
+            background-image: url(../images/wkt-common-2.png)
+        }
+        .icon-video {
+            background-image: url(../images/wkt-common-1.png)
+        }
+        .icon-up {
+            background-image: url(../images/wkt-create-1.png)
+        }
+        .icon-delete {
+            background-image: url(../images/wkt-create-2.png)
+        }
+    }
 
    
 }
 .wkt-my-bottom-box {
     margin:20px 0 50px;
     text-align: center;
+    .check-box {
+        font-size: 28px;
 
+        input[type=checkbox] {
+            margin: 0 10px -10px 0;
+        }
+       
+    }
     .msg {
         font-size: 22px;
         color: #888;

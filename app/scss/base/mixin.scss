@@ -19,3 +19,8 @@
     transform:translate($x, $y);
     -webkit-transform:translate($x, $y);
 }
+@mixin icon($x,$y,$z:''){
+    width:$x;
+    height:$y;
+    background-image: url($z);
+}
