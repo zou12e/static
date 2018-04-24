@@ -201,6 +201,9 @@ $color_bg: #e5f3fb;
     li.delete {
         @include wkt-delete-box;
     }
+    li.no-bottom-border {
+        border-bottom: none;
+    }
     .course-img {
         width: 150px;
         height: 150px;
