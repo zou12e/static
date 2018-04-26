@@ -1,7 +1,6 @@
 .wkt-contact-header {
     height: 500px;
-    
-    
+
     .logo {
         width: 132px;
         height: 132px;
@@ -35,6 +34,57 @@
         .icon-addr {
             background-image: url(../images/wkt-contack-13.png);
         }
+    }
+}
+
+.wkt-contact-home-list {
+    margin:  0 20px;
+    padding: 20px;
+    > li {
+        margin-bottom: 20px;
+    }
+}
+.wkt-contact-team-list {
+    > li {
+         > a {
+             display: block;
+             position: relative;
+             p {
+                 position: absolute;
+                 bottom: 0;
+                 color: #fff;
+                 line-height: 60px;
+                 height: 60px;
+                 font-size: 26px;
+                 left: 20px;
+                 right: 20px;
+                 @include nowrap;
+             }
+         }
+         img {
+            width: 100%;
+            display: block;
+         }
+    }
+}
+
+.wkt-contact-detail {
+    text-align: center;
+    padding-top: 50px;
+    p {
+        font-size: 26px;
+        text-align: left;
+        margin-left: 145px;
+        line-height: 50px;
+    }
+    .p2,.p3 {
+        color: #888;
+    }
+    .p2 {
+        margin-top: 10px;
+    }
+    .p3 {
+        margin-left: 90px;
     }
 }
 
@@ -78,3 +128,34 @@
 
     
 }
+
+.wkt-contact-about-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    > img {
+        width: 200px;
+        
+    }
+    overflow-y: scroll;
+    padding: 250px 0;
+    // height: 880px;
+    // overflow-y:scroll;
+    
+    p {
+        font-size: 24px;
+        color: #fff;
+        text-align: left;
+        line-height: 50px;
+        padding: 0 50px;
+        text-indent: 50px;
+    }
+    p.t {
+        text-indent: 0 ;
+        margin-top: 30px;
+    }
+}
+
+

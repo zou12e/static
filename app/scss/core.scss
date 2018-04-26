@@ -14,8 +14,8 @@
         font-size: 28px;
         line-height: 80px;
         position: absolute;
-        left: 0;
-        right: 0;
+        left: 120px;
+        right: 120px;
         z-index: 10;
         @include nowrap;
     }
@@ -99,13 +99,26 @@
     overflow: hidden;
     
 }
-
+.wkt-footer-bg {
+    height: 555px;
+    background-image: url(../images/wkt-bg-1.png);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    > p {
+        font-size: 36px;
+        color: #fff;
+        margin: 150px 0 0 0 ;
+    }
+}
 .wkt-full-body {
     display: flex; 
     flex-flow: column; 
     min-height: 100vh; 
     overflow:auto;
-    .wkt-only-content,.wkt-only-footer,.wkt-content-comment,.wkt-content-footer,.wkt-long-content {
+    .wkt-404-content,.wkt-only-content,.wkt-only-footer,.wkt-content-comment,.wkt-content-footer,.wkt-long-content {
         flex: 1;
     }
 }
@@ -121,7 +134,30 @@
 .wkt-content-footer {
     margin: 80px 0 120px;
 }
-
+.wkt-404-content {
+    display: flex;
+    justify-content: flex-end;
+    > img {
+        width: 588px;
+        height: 615px;
+    }
+}
+.wkt-no-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > img {
+        width: 388px;
+        height: 256px;
+    }
+    > p {
+        margin-top: 50px;
+        font-size: 32px;
+        color: #a7a4a8;
+    }
+}
 .wkt-footer {
     position: fixed;
     left: 0;
@@ -512,3 +548,62 @@
         }
     }
 }
+
+.wkt-dialog-box {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+
+    .wkt-reply-box {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 320px;
+        background-color: #fff;
+        padding: 0 30px;
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            line-height: 80px;
+            color: $color;
+            position: relative;
+            .canle {
+                float: right;
+                padding: 0 30px;
+                color: #979797;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        .textarea-box {
+            position: relative;
+            textarea {
+                @include wkt-input;
+                border-radius: 15px;
+                padding:10px 30px;
+                height: 140px;
+            }
+
+            >span {
+                position: absolute;
+                color: #979797;
+                font-size: 20px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+        .wkt-button-flat {
+            float: right;
+            margin-top: 20px;
+        }
+
+    }
+}
+
