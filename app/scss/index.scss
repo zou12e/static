@@ -1,3 +1,221 @@
+.wkt-index-content {
+    .index-top {
+        position: relative;
+        height: 500px;
+        background-color: #f4f4f4;
+        .img-box {
+            position: relative;
+            height: 387px;
+            img {
+                width: 100%;
+                height: 387px;
+            }
+
+            ul {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                left: 50%;
+                @include translate();
+                bottom: 70px;
+                li {
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background-color: #ccc;
+                    margin: 0 20px 0 0;
+
+
+                }
+                li.on {
+                    width: 21px;
+                    height: 21px;
+                    background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#c377dd), to(#7572f8));  
+                }
+                li:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .menu {
+            position: absolute;
+            background-color: #fff;
+            left: 30px;
+            right: 30px;
+            height: 185px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-radius: 10px;
+
+            > li {
+                margin-right: 20px;
+                > a {
+                    display: block;
+                }
+                img {
+                    display: block;
+                    width: 150px;
+                    height: 160px;
+                    margin: 0 auto;
+                }
+            }
+
+            > li:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .index-title {
+        @include wkt-border-top ;
+
+        font-size: 24px;
+        color: #777;
+        line-height: 70px;
+        padding: 0 30px;
+
+        .icon-toutiao {
+            @include icon(93px,28px,'../images/wkt-home-5.png');
+            margin: 0 10px -6px 0;
+        }
+    }
+    .index-tag {
+        padding-top: 30px;
+        position: relative;
+        > .icon {
+            position: absolute;
+            @include icon(177px,46px);
+            left: 0;
+            top: -10px;
+        }
+        .icon-hot {
+            background-image: url(../images/wkt-home-6.png)
+        }
+        .icon-context {
+            background-image: url(../images/wkt-home-7.png)
+        }
+        .icon-books {
+            background-image: url(../images/wkt-home-8.png)
+        }
+    }
+    .index-hot {
+        @include wkt-border-top ;
+    }
+
+    .index-context {
+        @include wkt-border-top ;
+        .title {
+            @include nowrap;
+            font-size: 24px;
+            line-height: 80px;
+            padding: 0 30px;
+            margin-top: 10px;
+        }
+        .head-box {
+            color: $color_txt;
+            line-height: 50px;
+            height: 50px;
+            position: relative;
+            font-size: 24px;
+            padding: 0 40px;
+            .min {
+                font-size: 20px;
+                color: #7d7d7d;
+            }
+            .head-img {
+                width: 50px;
+                height: 50px;
+                margin: 0 5px -15px 0;
+            }
+        }
+        .text {
+            font-size: 24px;
+            color: #777;
+            line-height: 50px;
+            padding: 0 30px 0 100px;
+            
+        }
+        .bottom {
+            font-size: 22px;
+            padding: 20px 0;
+            text-align: right;
+            >span {
+                background-color: #f1f1f1;
+                font-size: 22px;
+                color: #777;
+                display: inline-block;
+                line-height: 40px;
+                margin:0 20px 0 0 ;
+                padding: 0 20px;
+                border-radius: 30px;
+                .icon {
+                    @include icon(22px,18px);
+                    margin: 0 0 -2px 0;
+                }
+                .icon-cmt {
+                    background-image: url(../images/wkt-comment-1.png);
+                }
+                .icon-zf {
+                    background-image: url(../images/wkt-comment-2.png);
+                }
+                .icon-dz {
+                    background-image: url(../images/wkt-comment-3.png);
+                    &:active {
+                        background-image: url(../images/wkt-comment-3-on.png);
+                    }
+                }
+            }
+            > span.on {
+                background:-webkit-gradient(linear, 100% 0, 100% 100%, from(rgba(195,119,221,0.2)), to(rgba(117,114,248,0.2)));  
+                .icon-dz {
+                    background-image: url(../images/wkt-comment-3-on.png);
+                }
+            }
+        }
+    }
+
+    .index-books {
+        @include wkt-border-top ;
+
+        > ul {
+
+            display: flex;
+            padding: 30px;
+            > li {
+                flex: 1;
+                text-align: center;
+                > a {
+                    display: block;
+                    &:active {
+                        background-color: #fff;
+                    }
+                }
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+                p {
+                    font-size: 24px;
+                    color: #777;
+                    height: 70px;
+                    justify-content: center;
+                     align-items: center;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    text-align: center;
+                    padding: 0 10px;
+                }
+            }
+        }
+
+    }
+}
+
 .wkt-index-course-content {
 
     margin-left: 210px;
@@ -5,7 +223,7 @@
 }
 
 .wkt-index-course-left {
-    position: fixed;
+    position: fixed; 
     left: 0;
     top: 80px;
     bottom: 0;

@@ -42,6 +42,10 @@
     padding: 20px;
     > li {
         margin-bottom: 20px;
+
+        img {
+            display: block;
+        }
     }
 }
 .wkt-contact-team-list {

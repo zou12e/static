@@ -214,6 +214,9 @@ $color_bg: #e5f3fb;
         margin-left: 170px;
         min-height: 150px;
         color: $color_txt;
+        a {
+            color: $color_txt;
+        }
         .title {
             max-height: 80px;
             min-height: 60px;
@@ -264,6 +267,11 @@ $color_bg: #e5f3fb;
     }
 }
 
+.wkt-course-list.no-bottom-border {
+    li:last-child {
+        border-bottom: none;
+    }
+}
 // 提交按钮
 .wkt-button {
     width: 428px;
